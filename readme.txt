@@ -33,3 +33,5 @@ git restore "filename":把"filename"文件在工作区的修改全部撤销
 
 git reset HEAD "filename":把暂存区（即add后）的修改撤销，重新放回工作区
 
+git rm "filename":删除文件    之后commit,真正删除
+
