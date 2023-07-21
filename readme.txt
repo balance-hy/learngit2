@@ -17,4 +17,4 @@ git status: check repository status
 
 git diff "fileName":Check the revisions of the last and this time
 
-hh 
+git log:查看历史修改记录
