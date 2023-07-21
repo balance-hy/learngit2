@@ -29,4 +29,7 @@ git reset --hard "版本号":回退至指定版本
 
 git reflog：命令历史记录
 
+git restore "filename":把"filename"文件在工作区的修改全部撤销
+
+git reset HEAD "filename":把暂存区（即add后）的修改撤销，重新放回工作区
 
