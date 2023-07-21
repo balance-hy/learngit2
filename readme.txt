@@ -13,4 +13,8 @@ because commit can commit many files so you can add different files many times.
 
 ls:View all files in the current directory.
 
+git status: check repository status
+
+git diff "fileName":Check the revisions of the last and this time
+
  
