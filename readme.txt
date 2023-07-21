@@ -25,6 +25,8 @@ HEAD^:上个版本 ^/1:一个版本 ^^/2
 
 git reset --hard HEAD^:回退至上版本
 
+git reset --hard "版本号":回退至指定版本
 
+git reflog：命令历史记录
 
 
