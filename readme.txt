@@ -18,3 +18,13 @@ git status: check repository status
 git diff "fileName":Check the revisions of the last and this time
 
 git log:查看历史修改记录
+
+HEAD:当前版本
+
+HEAD^:上个版本 ^/1:一个版本 ^^/2
+
+git reset --hard HEAD^:回退至上版本
+
+
+
+
