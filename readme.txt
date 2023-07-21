@@ -56,5 +56,13 @@ git remote rm origin:根据名字删除远程库,例如origin
 git clone git@github.com:github账户名/远程库名.git
 
 
-branch test
+git branch:查看分支
+
+git branch <name>:创建分支
+
+git switch <name>:切换分支
+
+git merge <name>:合并某分支到当前分支
+
+git branch -d <name>:删除分支
 
