@@ -2,20 +2,20 @@ mkdir "directoryname"
 cd "directoryname"
 git init
 
-create a file i.e example.txt
+create a file i.e example.txt 创建一个文件
 put this file in the "directoryname"(or subdirectories of this directory)
+将文件放于文件夹目录或子目录下
 
-git add example.txt
-git commit -m "something you want say"
+git add example.txt //将文件加入暂存区
+git commit -m "something you want say" //将暂存区内文件提交
 
-Why do we need add and commit instead of just add?
-because commit can commit many files so you can add different files many times.
 
-ls:View all files in the current directory.
 
-git status: check repository status
+ls:列出当前目录下所有文件
 
-git diff "fileName":Check the revisions of the last and this time
+git status: check repository status //查看库状态
+
+git diff "fileName":查看该文件修改记录，在add前使用
 
 git log:查看历史修改记录
 
