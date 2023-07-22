@@ -90,4 +90,8 @@ git stash pop:恢复并删除stash内容
 
 git cherry-pick <commit id>:复制一个特定的提交到当前分支
 
-no！
+
+git log --graph --pretty=oneline --abbrev-commit:图表形式显示历史，abbrev：显示前七位commit id
+
+
+
