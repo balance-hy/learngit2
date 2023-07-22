@@ -67,4 +67,27 @@ git merge <name>:合并某分支到当前分支
 git branch -d <name>:删除分支
 
 
-Creating a new branch is quick AND simple.
+合并分支时，如果可能，Git会用Fast forward模式，但这种模式下，删除分支后，会丢掉分支信息
+强制禁用Fastforward模式，Git就会在merge时生成一个新的commit，这样，从分支历史上就可以看出分支信息
+
+git merge --no-ff -m "commit的描述" <branchName>
+
+--no-ff:禁用Fast forward
+
+
+BUG分支
+
+在dev正在进行工作，需要修复BUG，git stash存储并隐藏当前工作，转移到master，修复后合并
+git stash list:查看已存储stash内容
+
+git stash apply <stash@{0}>:恢复指定的存储的内容，但不删除stash内容
+
+git stash drop:删除stash内容
+
+git stash pop:恢复并删除stash内容
+
+在master分支上修复了bug后,这个bug其实在当前dev分支上也存在
+
+git cherry-pick <commit id>:复制一个特定的提交到当前分支
+
+
