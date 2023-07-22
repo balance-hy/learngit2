@@ -107,10 +107,4 @@ git log --graph --pretty=oneline --abbrev-commit:图表形式显示历史，abbr
 命令git branch --set-upstream-to=origin/<branch-name> <branch-name> 。
 
 
-this is a test!
-
-
-test3.
-
-test2!
 
