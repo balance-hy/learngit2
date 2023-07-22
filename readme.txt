@@ -106,3 +106,30 @@ git log --graph --pretty=oneline --abbrev-commit:图表形式显示历史，abbr
 如果git pull提示no tracking information，则说明本地分支和远程分支的链接关系没有创建，用
 命令git branch --set-upstream-to=origin/<branch-name> <branch-name> 。
 
+
+标签
+
+git tag <tagname>:新建一个标签，默认为HEAD版本，也可以指定一个commit id
+i.e git tag v0.9 f52c633
+
+git tag:查看标签
+
+git show <tagname>:查看标签信息
+
+git tag -a v0.1 -m "version 0.1 released" 1094adb:为1094adb创建v0.1版本，-m添加描述
+
+git tag -d v0.1:删除v0.1标签
+
+git push origin <tagname>:推送标签至远程
+
+git push origin --tags:推送所有尚未推送到远程的标签
+
+如何删除远程标签：
+
+1.先本地删除 git tag -d v0.1
+
+2.再删除远程 git push origin :refs/tags/v0.1
+
+
+
+
