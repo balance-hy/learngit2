@@ -64,7 +64,7 @@ git switch <name>:切换分支
 
 git merge <name>:合并某分支到当前分支
 
-git branch -d <name>:删除分支
+git branch -d <name>:删除分支 -D:强制删除
 
 
 合并分支时，如果可能，Git会用Fast forward模式，但这种模式下，删除分支后，会丢掉分支信息
@@ -93,5 +93,16 @@ git cherry-pick <commit id>:复制一个特定的提交到当前分支
 
 git log --graph --pretty=oneline --abbrev-commit:图表形式显示历史，abbrev：显示前七位commit id
 
+多人协作
 
+首先，可以试图用git push origin <branch-name>推送自己的修改；
+
+如果推送失败，则因为远程分支比你的本地更新，需要先用git pull试图合并；
+
+如果合并有冲突，则解决冲突，并在本地提交；
+
+没有冲突或者解决掉冲突后，再用git push origin <branch-name>推送就能成功！
+
+如果git pull提示no tracking information，则说明本地分支和远程分支的链接关系没有创建，用
+命令git branch --set-upstream-to=origin/<branch-name> <branch-name> 。
 
