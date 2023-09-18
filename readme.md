@@ -1,3 +1,8 @@
+# Git
+
+## 创建并初始化git目录
+
+```markdown
 mkdir "directoryname"
 cd "directoryname"
 git init
@@ -5,13 +10,19 @@ git init
 create a file i.e example.txt 创建一个文件
 put this file in the "directoryname"(or subdirectories of this directory)
 将文件放于文件夹目录或子目录下
+```
 
+## add和commit
+
+```markdown
 git add example.txt //将文件加入暂存区
 git commit -m "something you want say" //将暂存区内文件提交
+```
 
+## 常用命令
 
-
-ls:列出当前目录下所有文件
+```
+ls 列出当前目录下所有文件
 
 git status: check repository status //查看库状态
 
@@ -34,9 +45,11 @@ git restore "filename":把"filename"文件在工作区的修改全部撤销
 git reset HEAD "filename":把暂存区（即add后）的修改撤销，重新放回工作区
 
 git rm "filename":删除文件    之后commit,真正删除
+```
 
+## 本地->远程
 
-
+```markdown
 本地库推送至远程库
 git remote add origin git@github.com:github账户名/本地库名.git
 
@@ -50,7 +63,11 @@ git push -u origin master //把当前分支master推送至远程库
 git remote -v:查看远程库信息
 
 git remote rm origin:根据名字删除远程库,例如origin
+```
 
+## 远程->本地
+
+```markdown
 远程库克隆至本地库
 
 git clone git@github.com:github账户名/远程库名.git
@@ -73,10 +90,11 @@ git branch -d <name>:删除分支 -D:强制删除
 git merge --no-ff -m "commit的描述" <branchName>
 
 --no-ff:禁用Fast forward
+```
 
+## BUG分支
 
-BUG分支
-
+```markdown
 在dev正在进行工作，需要修复BUG，git stash存储并隐藏当前工作，转移到master，修复后合并
 git stash list:查看已存储stash内容
 
@@ -105,8 +123,11 @@ git log --graph --pretty=oneline --abbrev-commit:图表形式显示历史，abbr
 
 如果git pull提示no tracking information，则说明本地分支和远程分支的链接关系没有创建，用
 命令git branch --set-upstream-to=origin/<branch-name> <branch-name> 。
+```
 
+## 标签
 
+```markdown
 标签
 
 git tag <tagname>:新建一个标签，默认为HEAD版本，也可以指定一个commit id
@@ -129,7 +150,7 @@ git push origin --tags:推送所有尚未推送到远程的标签
 1.先本地删除 git tag -d v0.1
 
 2.再删除远程 git push origin :refs/tags/v0.1
-
+```
 
 
 
