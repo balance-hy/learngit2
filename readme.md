@@ -10,6 +10,7 @@ git init
 create a file i.e example.txt 创建一个文件
 put this file in the "directoryname"(or subdirectories of this directory)
 将文件放于文件夹目录或子目录下
+git config --list 查看git配置
 ```
 
 ## add和commit
