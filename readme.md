@@ -16,7 +16,9 @@ git config --list 查看git配置
 ## add和commit
 
 ```markdown
-git add example.txt //将文件加入暂存区
+git add example.txt //将文件加入暂存区 多个文件空格分开
+git add directory //加入文件夹
+`git add directory/*`  //将指定目录下及子目录下所有文件加入暂存区
 git commit -m "something you want say" //将暂存区内文件提交
 ```
 
