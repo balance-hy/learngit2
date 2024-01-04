@@ -67,6 +67,11 @@ git push -u origin master //把当前分支master推送至远程库
 git remote -v:查看远程库信息
 
 git remote rm origin:根据名字删除远程库,例如origin
+
+//如果之后要指定分支推送，此时不用-u
+git push <远程仓库名称> <本地分支名称>:<远程分支名称>
+//例如：
+git push origin feature-branch:development
 ```
 
 ## 远程->本地
